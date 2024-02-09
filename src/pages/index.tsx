@@ -43,29 +43,35 @@ export default function Home() {
                 <img src="headshot.jpg" alt="Joseph Kan Picture" />
               </div>
               <div className={styles.introduction}>
-                <h1 className={styles.introduction}>Hello, I'm Joseph!</h1>
+                <h1 className={styles.introduction}>{"Hello, I'm Joseph!"}</h1>
                 <p>
-                  I'm a business and computer science student at the Ivey
-                  Business School, interested in software development and global
-                  macro trading strategies.
+                  {
+                    "I'm a business and computer science student at the Ivey \
+                  Business School, interested in software development and global \
+                  macro trading strategies."
+                  }
                   <br />
                   <br />
-                  I've previously interned at Hawkbridge Capital Partners as an
-                  investment banking analyst. I also worked at Moongate and
-                  Fourth Dimension as a software developer!
+                  {
+                    "I've previously interned at Hawkbridge Capital Partners as an \
+                  investment banking analyst. I also worked at Moongate and \
+                  Fourth Dimension as a software developer!"
+                  }
                   <br />
                   <br />
-                  Outside of work, I enjoy going on long walks, dancing, and
-                  competitive debate.
+                  {
+                    "Outside of work, I enjoy going on long walks, dancing, and \
+                  competitive debate."
+                  }
                   <br />
                   <br />
-                  If you would like to chat, please reach out to me on
+                  {"If you would like to chat, please reach out to me on"}
                   <a href="https://www.linkedin.com/in/joseph-kan-21116b193/">
-                    LinkedIn
+                    {"LinkedIn"}
                   </a>
-                  or at
+                  {"or at"}
                   <a href="mailto:josephkan3@gmail.com">josephkan3@gmail.com</a>
-                  . Feel free to browse my portfolio below!
+                  {". Feel free to browse my portfolio below!"}
                 </p>
               </div>
             </div>
@@ -104,9 +110,11 @@ export default function Home() {
 
           <h2>My Investment Portfolio</h2>
           <p>
-            I trade a variety of currencies, commodities, and bonds, focusing on
-            global macro themes. If you have an interesting trade idea, hit me
-            up! I'm happy to hear your thoughts!
+            {
+              "I trade a variety of currencies, commodities, and bonds, focusing on \
+            global macro themes. If you have an interesting trade idea, hit me \
+            up! I'm happy to hear your thoughts!"
+            }
             <br />
             <br />
             <span className={styles.bold}>
