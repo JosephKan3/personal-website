@@ -1,0 +1,104 @@
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  max-height: 44rem;
+}
+
+.card_title {
+  margin-bottom: 0.5rem;
+  height: 3rem;
+}
+
+.project_name {
+  font-size: 28px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  height: 20rem;
+  overflow: hidden;
+  display: block;
+}
+
+.card_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  height: 100%;
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.github_icon {
+  height: 32px;
+  width: 32px;
+}
+
+.card_content h3 {
+  margin: 0;
+  color: #333;
+}
+
+.card_content p {
+}
+
+.small_card_text {
+  font-size: 16px;
+  color: black;
+}
+
+p.small_card_text {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.card_description {
+  font-size: 18px;
+  line-height: 18px;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  color: #666;
+  height: 36px;
+}
+
+.key_challenges {
+}
+
+.key_title {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+  color: #000000;
+}
+
+.challenge_list {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  padding-left: 1.5rem;
+}
+
+.card_list_item {
+  padding-bottom: 0.5rem;
+}
+
+.notice {
+  color: rgb(255, 79, 79);
+  font-weight: 100;
+  font-size: small;
+}
