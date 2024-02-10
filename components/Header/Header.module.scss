@@ -1,0 +1,54 @@
+.headerContainer {
+  background-color: #1e1e2f;
+  border-bottom: 0.0625rem solid #353945;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.25rem;
+  padding: 0 4rem;
+  @media (max-width: 680px) {
+    padding: 0 1.5rem;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-height: 3.9375rem;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+
+  :visited {
+    color: rgb(174, 174, 174);
+  }
+
+  :hover {
+    color: rgb(94, 94, 94);
+  }
+
+  @media (max-width: 1000px) {
+    gap: 1.5rem;
+  }
+}
+
+.headerLinks {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  color: #ffffff;
+  line-height: 1.875rem;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0 1em;
+}

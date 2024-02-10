@@ -1,0 +1,16 @@
+@mixin respond-to($media) {
+  @if $media==phone {
+    @media only screen and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+      only screen and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+      @content;
+    }
+  } @else if $media==tablet {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $media==large {
+    @media only screen and (min-device-width: 1920px) and (orientation: landscape) {
+      @content;
+    }
+  }
+}

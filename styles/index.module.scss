@@ -1,0 +1,205 @@
+// Introduction Section
+.introductionBody {
+  max-width: 140rem;
+  margin: 3rem 6em 3rem 6rem;
+  margin-top: 3.125rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  height: 50rem;
+  justify-content: center;
+  gap: 4rem;
+  width: 100%;
+  @media (max-width: 680px) {
+    gap: 2rem;
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    height: auto;
+    margin: 2rem;
+  }
+}
+
+.introductionText {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  max-width: 70rem;
+  @media (max-width: 500px) {
+    justify-content: flex-start;
+    flex-flow: column nowrap;
+    height: auto;
+    margin: 0rem 0.5rem;
+    width: 100%;
+  }
+}
+
+.headshotWrapper {
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30%;
+  max-height: 80%;
+  width: 60vw;
+  @media (max-width: 500px) {
+    height: auto;
+    width: 90vw;
+    max-width: none;
+    max-height: none;
+    align-self: flex-start;
+  }
+}
+
+.headshotImageWrapper {
+  border-radius: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 60vw;
+  max-width: 28rem;
+  position: relative;
+  z-index: 2;
+  @media (max-width: 500px) {
+    height: auto;
+  }
+}
+
+.headshotImage {
+  border-radius: 50%;
+}
+
+.mainHeading {
+  font-weight: 600;
+  font-size: 3.375rem;
+  line-height: 4.125rem;
+  @media (max-width: 500px) {
+    text-align: center;
+  }
+}
+
+.mainSubheading {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #cac4d0;
+  @media (max-width: 500px) {
+    text-align: center;
+  }
+}
+
+.highlight {
+  color: #7ed2c7;
+}
+
+.glowWrapper {
+  position: absolute;
+  height: 20vw;
+  width: 20vw;
+  max-width: 48rem;
+  max-height: 48rem;
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+
+.glow {
+  background: linear-gradient(
+    161.52deg,
+    rgba(208, 188, 255, 0.4) 5.89%,
+    rgba(59, 215, 163, 0.2) 28.46%,
+    rgba(64, 220, 246, 0.39) 45.53%,
+    rgba(208, 188, 255, 0.5) 87.48%,
+    rgba(208, 188, 255, 0.1) 100%
+  );
+  filter: blur(8.2693rem);
+  transform: matrix(-0.35, -0.94, 0.94, -0.35, 0, 0);
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.indexButton {
+  min-width: 12rem;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+.sectionContainer {
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 10rem;
+  max-width: 140rem;
+  @media (max-width: 500px) {
+    margin: 0rem 2rem;
+  }
+}
+
+.subTitle {
+  font-weight: 600;
+  font-size: 3.375rem;
+  line-height: 4.125rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  @media (max-width: 500px) {
+    text-align: center;
+  }
+}
+
+// Project Section
+.projectSection {
+  display: flex;
+  flex-flow: column;
+}
+
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+// Investment Section
+.investmentSubheading {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #cac4d0;
+  text-align: left;
+}
+
+.instrumentChartWrapper {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  width: 75%;
+  height: 70vh;
+  max-height: 120vw;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+  border: #666666;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1rem;
+}
+
+// Fonts
+.bold {
+  font-weight: bold;
+}
+.cash_money {
+  color: #28c932;
+}
+.L_Ratio {
+  color: rgb(228, 57, 54);
+}
