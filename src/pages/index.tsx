@@ -106,7 +106,7 @@ export default function Home() {
               imageSrc="portfolioImages/spotitube.jpg"
               githubUrl="https://github.com/JosephKan3/spotitube"
               notice="Server Currently Offline"
-              motivation="I wanted to create a tool to help me migrate my Youtube playlists from the first 15 years of my life to Spotify: a task that would've taken forever."
+              motivation="I wanted to create a tool to help me migrate the Youtube playlists I made during the first 15 years of my life over to Spotify: a task that would've taken forever without automation."
               challenges={[
                 "Handling OAuth flows for Spotify and Youtube",
                 "Optimizing search algorithm used to match Youtube titles against Spotify track names",
