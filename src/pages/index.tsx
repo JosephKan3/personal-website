@@ -4,22 +4,40 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/Navbar";
 import ProjectCard from "@/components/ProjectCard";
+import Chart from "@/components/Chart";
 import { useEffect, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [oandaReturns, setOandaReturns] = useState(0);
+  const [oandaTradeInstruments, setOandaTradeInstruments] = useState({});
 
   // Fetches portfolio returns data from OANDA
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/api/oanda");
+        const response = await fetch("/api/oandaReturn");
         const data = await response.json();
         setOandaReturns(data);
       } catch (error) {
         console.error("Error fetching OANDA returns:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  // Fetches trade instrument summary data from OANDA
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("/api/oandaTrades");
+        const data = await response.json();
+        setOandaTradeInstruments(data);
+        console.log(data);
+      } catch (error) {
+        console.error("Error fetching OANDA trade instrument summary:", error);
       }
     };
 
@@ -128,6 +146,9 @@ export default function Home() {
               </span>
             </span>
           </p>
+          <div className={styles.instrumentChartWrapper}>
+            <Chart dataDictionary={oandaTradeInstruments}></Chart>
+          </div>
         </section>
       </div>
     </>

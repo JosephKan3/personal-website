@@ -37,7 +37,11 @@ interface Account {
   marginCallPercent: string;
 }
 
-interface AccountTransaction {
-  account: Account;
-  lastTransactionID: string;
+interface Transaction {
+  id: string;
+  time: string;
+  userID: number;
+  accountID: string;
+  batchID: string;
+  requestID: string;
 }
