@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import axios, { AxiosError, AxiosRequestConfig } from "axios";
 import { axiosRequestWithRetry, to } from "@/utils/request";
+import { OANDA_CODES } from "@/types/oandaCodes";
 
 export default async function handler(
   req: NextApiRequest,
@@ -33,8 +34,10 @@ export default async function handler(
           (map: { [key: string]: number }, transaction: any) => {
             // Count only transactions with a valid instrument
             if (transaction.instrument) {
-              map[transaction.instrument] =
-                (map[transaction.instrument] || 0) + 1;
+              const instrumentDisplayName =
+                OANDA_CODES[transaction.instrument as keyof typeof OANDA_CODES];
+              map[instrumentDisplayName] =
+                (map[instrumentDisplayName] || 0) + 1;
             }
             return map;
           },
