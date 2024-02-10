@@ -125,7 +125,8 @@ export default function Home() {
               ]}
             />
           </div>
-
+        </section>
+        <section className={styles.investmentPortfolio}>
           <h2>My Investment Portfolio</h2>
           <p>
             {
