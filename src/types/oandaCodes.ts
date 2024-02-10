@@ -25,7 +25,7 @@ export const OANDA_CODES = {
   US2000_USD: "US Russ",
   AUD_SGD: "AUD/SGD",
   AUD_HKD: "AUD/HKD",
-  WTICO_USD: "West Texas",
+  WTICO_USD: "West Texas Oil",
   XAG_AUD: "Silver/AUD",
   GBP_USD: "GBP/USD",
   USD_MXN: "USD/MXN",

@@ -51,10 +51,12 @@
 }
 
 .card_container {
-  display: grid;
+  display: flex;
+  margin-top: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px 0;
+  justify-content: center;
 }
 
 .cash_money {

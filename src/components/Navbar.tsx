@@ -8,16 +8,22 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
     <>
       <nav>
         <div className={styles.navbar}>
-          <a href="https://github.com/JosephKan3" target="_blank">
+          <a
+            className={styles.navButton}
+            href="https://github.com/JosephKan3"
+            target="_blank"
+          >
             GitHub
           </a>
           <a
+            className={styles.navButton}
             href="https://www.linkedin.com/in/joseph-kan-21116b193"
             target="_blank"
           >
             LinkedIn
           </a>
           <a
+            className={styles.navButton}
             href="https://github.com/JosephKan3/personal-website"
             target="_blank"
           >
