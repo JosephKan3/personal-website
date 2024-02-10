@@ -1,0 +1,100 @@
+.introduction_header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+  justify-self: start;
+  align-self: flex-start;
+}
+
+.introduction_section {
+  background-color: #ababab;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 5rem 5rem;
+}
+
+.portfolio_section {
+  background-color: #eeeeee;
+  padding: 5rem 5rem;
+}
+
+.investment_section {
+  background-color: rgb(255, 255, 255);
+  padding: 5rem 5rem;
+}
+
+.content_body {
+  width: 50%;
+  display: flex;
+  flex-flow: column;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.profile_image img {
+  width: 20rem;
+  max-width: 40%;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-bottom: 1rem;
+}
+
+.introduction h1 {
+  margin-bottom: 1rem;
+}
+
+.portfolio h2 {
+  color: #333;
+}
+
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+  justify-content: center;
+}
+
+.cash_money {
+  color: #28c932;
+}
+
+.instrumentChartWrapper {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  height: 70vh;
+  max-height: 120vw;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+  border: #666666;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .content_body {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .introduction_section {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .portfolio_section {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+
+  .investment_section {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
