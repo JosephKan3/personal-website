@@ -87,6 +87,7 @@ const Home: NextPage = () => {
                 <a
                   href="https://www.linkedin.com/in/joseph-kan-21116b193/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   {"LinkedIn"}
                 </a>

@@ -7,13 +7,17 @@ const Header = () => {
       <div className={styles.header + " container"}>
         <div className={styles.navLinks}>
           <Link href="https://github.com/JosephKan3">
-            <a className={styles.headerLinks}>GitHub</a>
+            <a className={styles.headerLinks} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
           </Link>
           <Link href="https://www.linkedin.com/in/joseph-kan-21116b193">
-            <a className={styles.headerLinks}>LinkedIn</a>
+            <a className={styles.headerLinks} target="_blank" rel="noreferrer">
+              LinkedIn
+            </a>
           </Link>
           <Link href="https://github.com/JosephKan3/personal-website">
-            <a className={styles.headerLinks} target="_blank">
+            <a className={styles.headerLinks} target="_blank" rel="noreferrer">
               Source Code
             </a>
           </Link>
