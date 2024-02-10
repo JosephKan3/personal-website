@@ -17,6 +17,12 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
           >
             LinkedIn
           </a>
+          <a
+            href="https://github.com/JosephKan3/personal-website"
+            target="_blank"
+          >
+            Source Code
+          </a>
         </div>
       </nav>
     </>
