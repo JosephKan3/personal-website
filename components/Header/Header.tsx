@@ -21,6 +21,14 @@ const Header = () => {
               Source Code
             </a>
           </Link>
+          <a
+            className={styles.headerLinks}
+            href="JosephKanResumeCurrent.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </header>
