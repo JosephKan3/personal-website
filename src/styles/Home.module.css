@@ -52,6 +52,7 @@
 
 .card_container {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;

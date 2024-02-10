@@ -31,4 +31,8 @@
     display: block;
     text-align: left;
   }
+
+  .navButton {
+    margin: 0;
+  }
 }
