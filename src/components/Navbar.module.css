@@ -11,6 +11,8 @@
   background-color: #333;
   height: 3.5rem;
   padding: 2rem;
+  position: fixed;
+  width: 100vw;
 }
 
 .navbar a {
