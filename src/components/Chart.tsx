@@ -69,6 +69,8 @@ const MyChart: React.FC<MyChartProps> = ({ dataDictionary }) => {
         beginAtZero: true,
       },
     },
+    maintainAspectRatio: false,
+    responsiveness: true,
   };
 
   return <Bar data={data} options={options} />;
