@@ -83,13 +83,13 @@ export default function Home() {
                   }
                   <br />
                   <br />
-                  {"If you would like to chat, please reach out to me on"}
+                  {"If you would like to chat, please reach out to me at "}
+                  <a href="mailto:josephkan3@gmail.com">josephkan3@gmail.com</a>
+                  {" or on "}
                   <a href="https://www.linkedin.com/in/joseph-kan-21116b193/">
                     {"LinkedIn"}
                   </a>
-                  {"or at"}
-                  <a href="mailto:josephkan3@gmail.com">josephkan3@gmail.com</a>
-                  {". Feel free to browse my portfolio below!"}
+                  {". Feel free to browse my portfolios below!"}
                 </p>
               </div>
             </div>
