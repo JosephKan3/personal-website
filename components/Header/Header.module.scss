@@ -50,5 +50,9 @@
   line-height: 1.875rem;
   font-weight: 500;
   font-style: normal;
-  margin: 0 1em;
+  margin: 0 1rem;
+
+  @media (max-width: 500px) {
+    margin: 0 0.5rem;
+  }
 }

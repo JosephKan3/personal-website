@@ -25,6 +25,7 @@
   width: 50%;
   max-width: 70rem;
   @media (max-width: 500px) {
+    order: 10;
     justify-content: flex-start;
     flex-flow: column nowrap;
     height: auto;
@@ -42,6 +43,8 @@
   max-height: 80%;
   width: 60vw;
   @media (max-width: 500px) {
+    margin-top: 1rem;
+    order: 5;
     height: auto;
     width: 90vw;
     max-width: none;
@@ -152,6 +155,7 @@
   justify-self: center;
   justify-content: center;
   @media (max-width: 500px) {
+    order: 0;
     text-align: center;
   }
 }
@@ -191,6 +195,9 @@
   border-width: 1px;
   border-style: solid;
   border-radius: 1rem;
+  @media (max-width: 500px) {
+    order: 10;
+  }
 }
 
 // Fonts
