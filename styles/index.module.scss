@@ -185,8 +185,9 @@
 }
 
 .instrumentChartWrapper {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
   width: 75%;
   height: 70vh;
   max-height: 120vw;
@@ -197,6 +198,8 @@
   border-radius: 1rem;
   @media (max-width: 500px) {
     order: 10;
+    padding: 0.125rem;
+    width: 100%;
   }
 }
 

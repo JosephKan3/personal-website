@@ -45,3 +45,8 @@ interface Transaction {
   batchID: string;
   requestID: string;
 }
+
+interface Trade {
+  date: string;
+  cumPerformance: number;
+}

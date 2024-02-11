@@ -3,15 +3,17 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/index.module.scss";
-import Chart from "../components/Chart";
+import PieChart from "../components/Chart/PieChart";
 import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import headshot from "/public/portfolioImages/headshot.jpg";
 import gptuwu from "/public/portfolioImages/gptuwu.gif";
 import spotitube from "/public/portfolioImages/spotitube.jpg";
+import LineChart from "../components/Chart/LineChart";
 
 const Home: NextPage = () => {
-  const [oandaReturns, setOandaReturns] = useState(0);
+  const [totalReturn, setTotalReturn] = useState(0);
+  const [oandaReturns, setOandaReturns] = useState([]);
   const [oandaTradeInstruments, setOandaTradeInstruments] = useState({});
 
   // Fetches portfolio returns data from OANDA
@@ -19,8 +21,17 @@ const Home: NextPage = () => {
     const fetchData = async () => {
       try {
         const response = await fetch("/api/oandaReturn");
-        const data = await response.json();
-        setOandaReturns(data);
+        const data: Trade[] = await response.json();
+
+        // Set returns data for chart
+        setOandaReturns(data as any);
+
+        // Trunacates to two decimal places
+        setTotalReturn(
+          data.at(-1) === undefined
+            ? 0
+            : parseFloat((data.at(-1) as Trade).cumPerformance.toFixed(2))
+        );
       } catch (error) {
         console.error("Error fetching OANDA returns:", error);
       }
@@ -36,7 +47,6 @@ const Home: NextPage = () => {
         const response = await fetch("/api/oandaTrades");
         const data = await response.json();
         setOandaTradeInstruments(data);
-        console.log(data);
       } catch (error) {
         console.error("Error fetching OANDA trade instrument summary:", error);
       }
@@ -162,16 +172,19 @@ const Home: NextPage = () => {
                   Total Return:{" "}
                   <span
                     className={
-                      oandaReturns >= 0 ? styles.cash_money : styles.L_Ratio
+                      totalReturn >= 0 ? styles.cash_money : styles.L_Ratio
                     }
                   >
-                    {oandaReturns}%
+                    {totalReturn}%
                   </span>
                 </span>
               </h3>
             </div>
             <div className={styles.instrumentChartWrapper}>
-              <Chart dataDictionary={oandaTradeInstruments}></Chart>
+              <LineChart trades={oandaReturns}></LineChart>
+            </div>
+            <div className={styles.instrumentChartWrapper}>
+              <PieChart dataDictionary={oandaTradeInstruments}></PieChart>
             </div>
           </div>
         </section>

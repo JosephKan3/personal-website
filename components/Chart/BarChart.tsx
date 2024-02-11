@@ -63,8 +63,6 @@ const MyChart: React.FC<MyChartProps> = ({ dataDictionary }) => {
     ],
   };
 
-  const options = {};
-
   return (
     <Bar
       data={data}
@@ -102,13 +100,12 @@ const MyChart: React.FC<MyChartProps> = ({ dataDictionary }) => {
           title: {
             display: true,
             color: "rgba(256, 256, 256, 1)",
-            text: "Custom Chart Title",
+            text: "Asset Class Breakdown",
           },
         },
         maintainAspectRatio: false,
         responsive: true,
-        // Set the background color for the entire chart
-        backgroundColor: "rgba(0, 255, 0, 0.1)", // This sets the background color outside the grid
+        backgroundColor: "rgba(0, 255, 0, 0.1)",
       }}
     />
   );
