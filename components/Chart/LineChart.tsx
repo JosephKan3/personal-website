@@ -31,7 +31,7 @@ interface ColorScheme {
   borderColor: string;
 }
 
-const MyChart: React.FC<MyChartProps> = ({ trades }) => {
+const MyChart: React.FC<MyChartProps> = ({ trades = [] }) => {
   // Function to generate a single color scheme for simplicity
   const generateColorScheme = (): ColorScheme => {
     const red = Math.floor((Math.random() * 255) / 2 + 128);

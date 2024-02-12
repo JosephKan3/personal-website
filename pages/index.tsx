@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import headshot from "/public/portfolioImages/headshot.jpg";
 import gptuwu from "/public/portfolioImages/gptuwu.gif";
+import redditFilters from "/public/portfolioImages/redditFilters.jpg";
 import spotitube from "/public/portfolioImages/spotitube.jpg";
 import LineChart from "../components/Chart/LineChart";
 
@@ -132,7 +133,13 @@ const Home: NextPage = () => {
               imageSrc={spotitube}
               githubUrl="https://github.com/JosephKan3/spotitube"
               notice="Server Currently Offline"
-              motivation="I wanted to create a tool to help me migrate the Youtube playlists I made during the first 15 years of my life over to Spotify: a task that would've taken forever without automation."
+              motivation={
+                <>
+                  {
+                    "I wanted to create a tool to help me migrate the Youtube playlists I made during the first 15 years of my life over to Spotify: a task that would've taken forever without automation."
+                  }
+                </>
+              }
               challenges={[
                 "Handling OAuth flows for Spotify and Youtube",
                 "Optimizing search algorithm used to match Youtube titles against Spotify track names",
@@ -145,9 +152,38 @@ const Home: NextPage = () => {
               description="Makes ChatGPT a Little Cuter"
               imageSrc={gptuwu}
               githubUrl="https://github.com/JosephKan3/GPTuwu"
-              motivation="Sometimes ChatGPT can beincredibly dumb. Putting a cute face on it makes it slightly more tolerable."
+              motivation={
+                <>
+                  {"Sometimes ChatGPT can be "}
+                  <span style={{ fontStyle: "italic" }}>incredibly</span>{" "}
+                  {
+                    "dumb. Putting a cute face on it makes it slightly more tolerable."
+                  }
+                </>
+              }
               challenges={[
                 "While you would assume this would be a simple chrome extension, there's a lot of weird DOM manipulation caused by all the web frameworks being used. This makes it challenging to add another listener modifying the DOM without conflicting with other listeners and causing bugs",
+              ]}
+            />
+            {/* <!-- Reddit Filters --> */}
+            <ProjectCard
+              title="Advanced Reddit Filters"
+              description="Filters Out Reddit Posts by Keyword and Subreddit"
+              imageSrc={redditFilters}
+              githubUrl="https://github.com/JosephKan3/redditFilters"
+              motivation={
+                <>
+                  <span style={{ fontStyle: "italic" }}>You</span>{" "}
+                  {" paid for your computer. "}
+                  <span style={{ fontStyle: "italic" }}>You</span>{" "}
+                  {
+                    " should be able to decide what kind of content it shows you."
+                  }
+                </>
+              }
+              challenges={[
+                "Adapting the extension to work with both the classic and the new Reddit layouts, each with different DOM structures and loading behaviors",
+                "Creating an intuitive and responsive user interface for the popup settings menu that allows users to easily manage their filters and preferences without feeling overwhelmed",
               ]}
             />
           </div>

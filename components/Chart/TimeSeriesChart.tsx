@@ -28,7 +28,7 @@ interface MyChartProps {
   trades: Trade[];
 }
 
-const MyChart: React.FC<MyChartProps> = ({ trades }) => {
+const MyChart: React.FC<MyChartProps> = ({ trades = [] }) => {
   const data = {
     // Use the trade dates directly without conversion to labels
     datasets: [

@@ -8,7 +8,7 @@ interface ProjectCardProps {
   imageSrc: StaticImageData;
   githubUrl: string;
   notice?: string; // Optional prop for server notice
-  motivation: string;
+  motivation: React.ReactNode;
   challenges: string[];
 }
 
@@ -24,7 +24,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className={styles.card}>
       <div className={styles.cardImageWrapper}>
-        <Image src={imageSrc} layout="responsive" alt={title} priority={true} />
+        <Image
+          className={styles.portfolioImage}
+          src={imageSrc}
+          layout="responsive"
+          objectFit="cover"
+          alt={title}
+          priority={true}
+        />
       </div>
       <div className={styles.card_info}>
         <div className={styles.card_content}>
