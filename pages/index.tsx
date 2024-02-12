@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import headshot from "/public/portfolioImages/headshot.jpg";
 import gptuwu from "/public/portfolioImages/gptuwu.gif";
-import redditFilters from "/public/portfolioImages/redditFilters.jpg";
+import redditFilters from "/public/portfolioImages/redditFilters.gif";
 import spotitube from "/public/portfolioImages/spotitube.jpg";
 import LineChart from "../components/Chart/LineChart";
 
@@ -169,7 +169,7 @@ const Home: NextPage = () => {
             {/* <!-- Reddit Filters --> */}
             <ProjectCard
               title="Advanced Reddit Filters"
-              description="Filters Out Reddit Posts by Keyword and Subreddit"
+              description="Filters Reddit Posts by User, Keyword, and Subreddit"
               imageSrc={redditFilters}
               githubUrl="https://github.com/JosephKan3/redditFilters"
               motivation={
@@ -180,11 +180,16 @@ const Home: NextPage = () => {
                   {
                     " should be able to decide what kind of content it shows you."
                   }
+                  <br></br>
+                  {"Features "}
+                  <span style={{ fontStyle: "italic" }}>The Nuke</span>
+                  {", which bans every user that posted in a given thread."}
                 </>
               }
               challenges={[
-                "Adapting the extension to work with both the classic and the new Reddit layouts, each with different DOM structures and loading behaviors",
-                "Creating an intuitive and responsive user interface for the popup settings menu that allows users to easily manage their filters and preferences without feeling overwhelmed",
+                "Handling both the classic and new Reddit layouts, each with different DOM structures and loading behaviors",
+                "Passing data between different browser environments (content script vs popup)",
+                "Creating a responsive UI for that allows users to easily manage their filters",
               ]}
             />
           </div>
