@@ -31,8 +31,8 @@ const MyChart: React.FC<MyChartProps> = ({ dataDictionary }) => {
 
     // OIL COLOR EXCEPTION FOR FUN
     const oilIndex = labels.findIndex((currString: string) => {
-      return currString === "";
-      // return currString === "West Texas Oil"; // Cant find a good design for this, so whatever
+      // return currString === "";
+      return currString === "West Texas Oil"; // Cant find a good design for this, so whatever
     });
 
     for (let i = 0; i < count; i++) {
@@ -43,12 +43,12 @@ const MyChart: React.FC<MyChartProps> = ({ dataDictionary }) => {
 
       colors.backgroundColor.push(
         i == oilIndex
-          ? `rgba(20, 20, 20, 0.5)`
+          ? `rgba(0, 0, 0, 0.5)`
           : `rgba(${red}, ${green}, ${blue}, 0.5)`
       );
       colors.borderColor.push(
         i == oilIndex
-          ? `rgba(10, 10, 10, 1)`
+          ? `rgba(75, 75, 75, 1)`
           : `rgba(${red}, ${green}, ${blue}, 1)`
       );
     }
