@@ -12,6 +12,10 @@
   @media (max-width: 500px) {
     max-height: 65rem;
   }
+  :hover {
+    transition: background-color 0.5s ease;
+    background-color: #13131f;
+  }
 }
 
 .card_title {
