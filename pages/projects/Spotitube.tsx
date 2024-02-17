@@ -84,7 +84,6 @@ const Spotitube: NextPage = () => {
               <p className={styles.bodyText}>
                 {"While Spotitube's servers are currently inactive due to Heroku's free tier being deactivated, you can browse the code and see images of the design below!"}
                 <br></br>
-                <br></br>
                 <Link target="_blank" href="https://github.com/JosephKan3/spotitube"><a target="_blank" rel="noreferrer">Github Link</a></Link>
               </p >
             </div>

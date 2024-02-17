@@ -83,7 +83,6 @@ const AdvancedRedditFilters: NextPage = () => {
               <p className={styles.bodyText}>
                 {"Advanced Reddit Features is currently a public chrome extension: you can try it out for yourself! You can also browse the code and view previews below!"}
                 <br></br>
-                <br></br>
                 <Link target="_blank" href="https://chromewebstore.google.com/detail/advanced-reddit-filters/maaenebojagffbkkipikfahpncchejec"><a target="_blank" rel="noreferrer">Chrome Store Link</a></Link>
                 <br></br>
                 <Link target="_blank" href="https://github.com/JosephKan3/redditFilters"><a target="_blank" rel="noreferrer">Github Link</a></Link>
