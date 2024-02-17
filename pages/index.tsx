@@ -130,6 +130,7 @@ const Home: NextPage = () => {
             {/* <!-- Spotitube --> */}
             <ProjectCard
               title="Spotitube"
+              link="spotitube"
               description="Youtube to Spotify Playlist Converter"
               imageSrc={spotitube}
               githubUrl="https://github.com/JosephKan3/spotitube"
@@ -150,6 +151,7 @@ const Home: NextPage = () => {
             {/* <!-- GPTuwu --> */}
             <ProjectCard
               title="GPTuwu"
+              link="gptuwu"
               description="Makes ChatGPT a Little Cuter"
               imageSrc={gptuwu}
               githubUrl="https://github.com/JosephKan3/GPTuwu"
@@ -169,6 +171,7 @@ const Home: NextPage = () => {
             {/* <!-- Reddit Filters --> */}
             <ProjectCard
               title="Advanced Reddit Filters"
+              link="advancedRedditFilters"
               description="Filters Reddit Posts by User, Keyword, and Subreddit"
               imageSrc={redditFilters}
               githubUrl="https://github.com/JosephKan3/redditFilters"

@@ -5,6 +5,7 @@ import Link from "next/link";
 
 interface ProjectCardProps {
   title: string;
+  link: string;
   description: string;
   imageSrc: StaticImageData;
   githubUrl: string;
@@ -15,6 +16,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
+  link,
   description,
   imageSrc,
   githubUrl,
@@ -23,7 +25,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   challenges,
 }) => {
   return (
-    <Link href={`./projects/${title}`}>
+    <Link href={`./projects/${link}`}>
       <div className={styles.card}>
         <div className={styles.cardImageWrapper}>
           <Image

@@ -5,7 +5,7 @@ import styles from "../../styles/project_page.module.scss";
 import spotitube from "/public/portfolioImages/spotitube.jpg";
 import Link from "next/link";
 
-const Home: NextPage = () => {
+const Spotitube: NextPage = () => {
   return (
     <>
       <Head>
@@ -40,9 +40,9 @@ const Home: NextPage = () => {
               </h2>
               <p className={styles.bodyText}>
                 {
-                  "Growing up as a kid, I did not have a lot of money to spend. \
-                  Since I could not afford to pay for subscriptions to Spotify, I mainly used Youtube to listen to music and store my playlists. \
-                  As my income increased, I eventually opted to use Spotify due to the convenience it provided. However, I had countless playlists with hundreds of songs on Youtube. \
+                  "Growing up as a kid, I didn't have a lot of money to spend. \
+                  Since I couldn't afford to pay for Spotify, I mainly used Youtube to listen to music and store my playlists. \
+                  In 2019, I finally decided to switch over to Spotify. However, I had countless playlists with hundreds of songs on Youtube. \
                   Transferring them over would've taken hours, if not days. \
                   Instead of going through the slow and mundane process of converting each playlist, I decided to make Spotitube!"
                 }
@@ -55,11 +55,13 @@ const Home: NextPage = () => {
               <p className={styles.bodyText}>
                 {
                   "Spotitube actually had multiple iterations, each marking my improvement as a software engineer. \
-                  Spotitube started out as a pure front-end application built with React that handled Youtube and Spotify OAuth in a dangerous manner. \
+                  It started out as a purely front-end React application that handled Youtube and Spotify OAuth flows in a dangerous manner. \
                   Youtube eventually dropped support for the library that I was using, forcing me to adapt. However, by that point, I had learned client-server architecture. \
-                  Thus, I rebuilt Spotitube, overhauling the code structure, UI, and most importantly, creating a back-end server built with Flask to handle OAuth in a secure manner. \
+                  Thus, I rebuilt Spotitube, overhauling the code structure, UI, and most importantly, creating a back-end server built with Flask to handle OAuth in a secure fashion. \
                  "
                 }
+                <br />
+                <br />
               </p >
               <h2 className={styles.bigSubheading}>
                 Key Challenges
@@ -73,6 +75,8 @@ const Home: NextPage = () => {
                 To handle this, I needed to create an interactive UI that displayed failed matches, and allowed users to either discard the song or search for a match themselves. \
                 \
                 "}
+                <br />
+                <br />
               </p >
               <h2 className={styles.bigSubheading}>
                 Gallery
@@ -81,7 +85,7 @@ const Home: NextPage = () => {
                 {"While Spotitube's servers are currently inactive due to Heroku's free tier being deactivated, you can browse the code and see images of the design below!"}
                 <br></br>
                 <br></br>
-                <Link href="https://github.com/JosephKan3/spotitube">Github Link</Link>
+                <Link target="_blank" href="https://github.com/JosephKan3/spotitube"><a target="_blank" rel="noreferrer">Github Link</a></Link>
               </p >
             </div>
             <div className={styles.HeroWrapper}>
@@ -105,4 +109,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Spotitube;
