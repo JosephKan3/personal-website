@@ -74,9 +74,8 @@ const Home: NextPage = () => {
               </h1>
               <h3 className={styles.mainSubheading}>
                 {
-                  "I'm a business and computer science student at the Ivey \
-                  Business School, interested in software development and global \
-                  macro trading strategies."
+                  "I'm a software engineer and economist who studied business and computer science at the Ivey \
+                  Business School and Western University."
                 }
                 <br />
                 <br />
@@ -88,7 +87,7 @@ const Home: NextPage = () => {
                 <br />
                 <br />
                 {
-                  "Outside of work, I enjoy going on long walks, dancing, and \
+                  "Outside of work, I enjoy going on long walks, aviation, and \
                   competitive debate."
                 }
                 <br />
