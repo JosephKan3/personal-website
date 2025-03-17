@@ -6,7 +6,7 @@ import styles from "../styles/index.module.scss";
 import PieChart from "../components/Chart/PieChart";
 import { useEffect, useState } from "react";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
-import headshot from "/public/portfolioImages/headshot.jpg";
+import headshot from "/public/portfolioImages/headshot.png";
 import gptuwu from "/public/portfolioImages/gptuwu.gif";
 import redditFilters from "/public/portfolioImages/redditFilters.gif";
 import spotitube from "/public/portfolioImages/spotitube.jpg";
