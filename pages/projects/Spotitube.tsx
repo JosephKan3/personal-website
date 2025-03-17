@@ -22,9 +22,7 @@ const Spotitube: NextPage = () => {
                 <span className={styles.highlight}>{"Spotitube"}</span>
               </h1>
 
-              <h2 className={styles.bigSubheading}>
-                Description
-              </h2>
+              <h2 className={styles.bigSubheading}>Description</h2>
               <p className={styles.bodyText}>
                 {
                   "Spotitube is a Youtube to Spotify playlist converter. \
@@ -35,9 +33,7 @@ const Spotitube: NextPage = () => {
                 <br />
                 <br />
               </p>
-              <h2 className={styles.bigSubheading}>
-                Context and Motivation
-              </h2>
+              <h2 className={styles.bigSubheading}>Context and Motivation</h2>
               <p className={styles.bodyText}>
                 {
                   "Growing up as a kid, I didn't have a lot of money to spend. \
@@ -49,9 +45,7 @@ const Spotitube: NextPage = () => {
                 <br />
                 <br />
               </p>
-              <h2 className={styles.bigSubheading}>
-                Architecture
-              </h2>
+              <h2 className={styles.bigSubheading}>Architecture</h2>
               <p className={styles.bodyText}>
                 {
                   "Spotitube actually had multiple iterations, each marking my improvement as a software engineer. \
@@ -62,30 +56,37 @@ const Spotitube: NextPage = () => {
                 }
                 <br />
                 <br />
-              </p >
-              <h2 className={styles.bigSubheading}>
-                Key Challenges
-              </h2>
+              </p>
+              <h2 className={styles.bigSubheading}>Key Challenges</h2>
               <p className={styles.bodyText}>
-                {"Building Spotitube had numerous challenges. \
+                {
+                  "Building Spotitube had numerous challenges. \
                 Aside from issues caused by my lack of experience which resolved over time, there isn't a perfect mapping between Youtube videos and Spotify songs: \
                 Not all Youtube videos are necessarily songs, and even if they were, Spotify's search API was too strict to match Youtube titles that had additional text in them. \
                 To address this issue, I did some pre-processing on all Youtube titles, removing common patterns that cause the match to fail. \
                 However, this still did not handle instances where there was no possible match with a Spotify song. \
                 To handle this, I needed to create an interactive UI that displayed failed matches, and allowed users to either discard the song or search for a match themselves. \
                 \
-                "}
+                "
+                }
                 <br />
                 <br />
-              </p >
-              <h2 className={styles.bigSubheading}>
-                Gallery
-              </h2>
+              </p>
+              <h2 className={styles.bigSubheading}>Gallery</h2>
               <p className={styles.bodyText}>
-                {"While Spotitube's servers are currently inactive due to Heroku's free tier being deactivated, you can browse the code and see images of the design below!"}
+                {
+                  "While Spotitube's servers are currently inactive due to Heroku's free tier being deactivated, you can browse the code and see images of the design below!"
+                }
                 <br></br>
-                <Link target="_blank" href="https://github.com/JosephKan3/spotitube"><a target="_blank" rel="noreferrer">Github Link</a></Link>
-              </p >
+                <Link
+                  target="_blank"
+                  href="https://github.com/JosephKan3/spotitube"
+                >
+                  <a target="_blank" rel="noreferrer">
+                    Github Link
+                  </a>
+                </Link>
+              </p>
             </div>
             <div className={styles.HeroWrapper}>
               <div className={styles.HeroImageWrapper}>
@@ -102,8 +103,8 @@ const Spotitube: NextPage = () => {
               </div>
             </div>
           </div>
-        </section >
-      </div >
+        </section>
+      </div>
     </>
   );
 };
