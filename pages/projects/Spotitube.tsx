@@ -75,8 +75,17 @@ const Spotitube: NextPage = () => {
               <h2 className={styles.bigSubheading}>Gallery</h2>
               <p className={styles.bodyText}>
                 {
-                  "While Spotitube's servers are currently inactive due to Heroku's free tier being deactivated, you can browse the code and see images of the design below!"
+                  "While Spotitube's main domain has expired, I've recently migrated the project from Heroku's free tier to Vercel, so you can see how it works!"
                 }
+                <br></br>
+                <Link
+                  target="_blank"
+                  href="https://spotitube-khaki.vercel.app/"
+                >
+                  <a target="_blank" rel="noreferrer">
+                    Vercel Link
+                  </a>
+                </Link>
                 <br></br>
                 <Link
                   target="_blank"
