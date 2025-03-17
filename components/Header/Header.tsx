@@ -7,9 +7,7 @@ const Header = () => {
       <div className={styles.header + " container"}>
         <div className={styles.navLinks}>
           <Link href="/">
-            <a className={styles.headerLinks}>
-              Home
-            </a>
+            <a className={styles.headerLinks}>Home</a>
           </Link>
           <Link href="https://github.com/JosephKan3">
             <a className={styles.headerLinks} target="_blank" rel="noreferrer">
@@ -28,7 +26,7 @@ const Header = () => {
           </Link>
           <a
             className={styles.headerLinks}
-            href="JosephKanResumeCurrent.pdf"
+            href="/JosephKanResumeCurrent.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -36,7 +34,7 @@ const Header = () => {
           </a>
         </div>
       </div>
-    </header >
+    </header>
   );
 };
 
