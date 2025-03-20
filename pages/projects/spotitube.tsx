@@ -11,7 +11,7 @@ const Spotitube: NextPage = () => {
       <Head>
         <title>Spotitube</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content="sitePreview.jpg" />
+        <meta property="og:image" content="sitePreview.png" />
       </Head>
       <div className="container">
         {/* Introduction */}

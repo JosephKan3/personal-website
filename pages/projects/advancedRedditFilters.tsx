@@ -11,7 +11,7 @@ const AdvancedRedditFilters: NextPage = () => {
       <Head>
         <title>Advanced Reddit Filters</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content="sitePreview.jpg" />
+        <meta property="og:image" content="sitePreview.png" />
       </Head>
       <div className="container">
         {/* Introduction */}
@@ -19,12 +19,12 @@ const AdvancedRedditFilters: NextPage = () => {
           <div className={styles.introductionBody}>
             <div className={styles.introductionText}>
               <h1 className={styles.mainHeading}>
-                <span className={styles.highlight}>{"Advanced Reddit Filters"}</span>
+                <span className={styles.highlight}>
+                  {"Advanced Reddit Filters"}
+                </span>
               </h1>
 
-              <h2 className={styles.bigSubheading}>
-                Description
-              </h2>
+              <h2 className={styles.bigSubheading}>Description</h2>
               <p className={styles.bodyText}>
                 {
                   "Advanced Reddit Filters (ARF) is a Chrome Extension that applies various filters to Reddit. \
@@ -36,9 +36,7 @@ const AdvancedRedditFilters: NextPage = () => {
                 <br />
                 <br />
               </p>
-              <h2 className={styles.bigSubheading}>
-                Context and Motivation
-              </h2>
+              <h2 className={styles.bigSubheading}>Context and Motivation</h2>
               <p className={styles.bodyText}>
                 {
                   "ARF initially began as a tool only intended for personal use. \
@@ -52,9 +50,7 @@ const AdvancedRedditFilters: NextPage = () => {
                 <br />
                 <br />
               </p>
-              <h2 className={styles.bigSubheading}>
-                Architecture
-              </h2>
+              <h2 className={styles.bigSubheading}>Architecture</h2>
               <p className={styles.bodyText}>
                 {
                   "ARF is a chrome extension that works on the client-side only. \
@@ -64,29 +60,43 @@ const AdvancedRedditFilters: NextPage = () => {
                 }
                 <br />
                 <br />
-              </p >
-              <h2 className={styles.bigSubheading}>
-                Key Challenges
-              </h2>
+              </p>
+              <h2 className={styles.bigSubheading}>Key Challenges</h2>
               <p className={styles.bodyText}>
-                {"One of the biggest challenges of ARF was the limitations imposed by the Reddit API. \
+                {
+                  "One of the biggest challenges of ARF was the limitations imposed by the Reddit API. \
                 The ideal version of this extension would enable functions like subreddit and user blocks to be stored and handled by Reddit's servers. \
                 However, given the low rate limit of the Reddit API free tier, and limitations like a user block limit of 1000 users, many features of ARF would be infeasible to implement using Reddit's API. \
                 Thus, ARF was built to function on the client-side only, limiting the scope of the extension, but retaining all its core features.\
-                "}
+                "
+                }
                 <br />
                 <br />
-              </p >
-              <h2 className={styles.bigSubheading}>
-                Gallery
-              </h2>
+              </p>
+              <h2 className={styles.bigSubheading}>Gallery</h2>
               <p className={styles.bodyText}>
-                {"Advanced Reddit Features is currently a public chrome extension: you can try it out for yourself! You can also browse the code and view previews below!"}
+                {
+                  "Advanced Reddit Features is currently a public chrome extension: you can try it out for yourself! You can also browse the code and view previews below!"
+                }
                 <br></br>
-                <Link target="_blank" href="https://chromewebstore.google.com/detail/advanced-reddit-filters/maaenebojagffbkkipikfahpncchejec"><a target="_blank" rel="noreferrer">Chrome Store Link</a></Link>
+                <Link
+                  target="_blank"
+                  href="https://chromewebstore.google.com/detail/advanced-reddit-filters/maaenebojagffbkkipikfahpncchejec"
+                >
+                  <a target="_blank" rel="noreferrer">
+                    Chrome Store Link
+                  </a>
+                </Link>
                 <br></br>
-                <Link target="_blank" href="https://github.com/JosephKan3/redditFilters"><a target="_blank" rel="noreferrer">Github Link</a></Link>
-              </p >
+                <Link
+                  target="_blank"
+                  href="https://github.com/JosephKan3/redditFilters"
+                >
+                  <a target="_blank" rel="noreferrer">
+                    Github Link
+                  </a>
+                </Link>
+              </p>
             </div>
             <div className={styles.HeroWrapper}>
               <div className={styles.HeroImageWrapper}>
@@ -103,8 +113,8 @@ const AdvancedRedditFilters: NextPage = () => {
               </div>
             </div>
           </div>
-        </section >
-      </div >
+        </section>
+      </div>
     </>
   );
 };

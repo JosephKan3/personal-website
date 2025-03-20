@@ -11,7 +11,7 @@ const GPTuwu: NextPage = () => {
       <Head>
         <title>GPTuwu</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:image" content="sitePreview.jpg" />
+        <meta property="og:image" content="sitePreview.png" />
       </Head>
       <div className="container">
         {/* Introduction */}
@@ -22,9 +22,7 @@ const GPTuwu: NextPage = () => {
                 <span className={styles.highlight}>{"GPTuwu"}</span>
               </h1>
 
-              <h2 className={styles.bigSubheading}>
-                Description
-              </h2>
+              <h2 className={styles.bigSubheading}>Description</h2>
               <p className={styles.bodyText}>
                 {
                   "GPTuwu is a fun little extension that replaces the default ChatGPT icon with a gif of a cute little cat. \
@@ -33,9 +31,7 @@ const GPTuwu: NextPage = () => {
                 <br />
                 <br />
               </p>
-              <h2 className={styles.bigSubheading}>
-                Context and Motivation
-              </h2>
+              <h2 className={styles.bigSubheading}>Context and Motivation</h2>
               <p className={styles.bodyText}>
                 {
                   "ChatGPT can often be both verbose and stupid. Replacing the ChatGPT icon with a gif of a yapping little cat just seemed natural.\
@@ -46,9 +42,7 @@ const GPTuwu: NextPage = () => {
                 <br />
                 <br />
               </p>
-              <h2 className={styles.bigSubheading}>
-                Architecture
-              </h2>
+              <h2 className={styles.bigSubheading}>Architecture</h2>
               <p className={styles.bodyText}>
                 {
                   "GPTuwu is a simple chrome extension that injects a content script that searches for the ChatGPT icon and replaces the image. \
@@ -56,28 +50,35 @@ const GPTuwu: NextPage = () => {
                 }
                 <br />
                 <br />
-              </p >
-              <h2 className={styles.bigSubheading}>
-                Key Challenges
-              </h2>
+              </p>
+              <h2 className={styles.bigSubheading}>Key Challenges</h2>
               <p className={styles.bodyText}>
-                {"At a first glance, this chrome extension might seem very simple to build. \
+                {
+                  "At a first glance, this chrome extension might seem very simple to build. \
                 However, I actually ran into a couple issues when making it, caused by conflicting listeners and quirks of the different web frameworks that ChatGPT runs on. \
                 When a chat is first started, the user's dialogue appears first. \
                 However, for about a second, the user's dialogue is actually initially loaded as a ChatGPT's dialogue before being replaced by the user. \
                 This caused the extension to modify the incorrect image. Similar conflicts with overlapping event listeners meant I had to carefully avoid conflicts to properly create the extension.\
-                "}
+                "
+                }
                 <br />
                 <br />
-              </p >
-              <h2 className={styles.bigSubheading}>
-                Gallery
-              </h2>
+              </p>
+              <h2 className={styles.bigSubheading}>Gallery</h2>
               <p className={styles.bodyText}>
-                {"GPTuwu is not currently a published extension, but you can also browse and load the code yourself, or view the previews below!"}
+                {
+                  "GPTuwu is not currently a published extension, but you can also browse and load the code yourself, or view the previews below!"
+                }
                 <br></br>
-                <Link target="_blank" href="https://github.com/JosephKan3/GPTuwu"><a target="_blank" rel="noreferrer">Github Link</a></Link>
-              </p >
+                <Link
+                  target="_blank"
+                  href="https://github.com/JosephKan3/GPTuwu"
+                >
+                  <a target="_blank" rel="noreferrer">
+                    Github Link
+                  </a>
+                </Link>
+              </p>
             </div>
             <div className={styles.HeroWrapper}>
               <div className={styles.HeroImageWrapper}>
@@ -94,8 +95,8 @@ const GPTuwu: NextPage = () => {
               </div>
             </div>
           </div>
-        </section >
-      </div >
+        </section>
+      </div>
     </>
   );
 };
